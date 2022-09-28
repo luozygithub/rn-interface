@@ -1,0 +1,41 @@
+
+.stars-wrapper {
+    position: relative;
+    pointer-events: none;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(#16161d, #1f1f3a, #3b2f4a);
+    overflow: hidden;
+}
+
+.comet {
+    transform-origin: center center;
+    animation: comet 2s linear infinite;
+}
+
+
+@keyframes comet {
+    0%,
+    40% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    60%,
+    100% {
+        -webkit-transform: translateX(-100vmax);
+        transform: translateX(-100vmax);
+        opacity: 0;
+    }
+}
+
+.comet-b {
+    animation-delay: -3.3s;
+}
+
+.comet-c {
+    animation-delay: -5s;
+}
