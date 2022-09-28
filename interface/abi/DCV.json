@@ -1,0 +1,111 @@
+{
+  "contractName": "DCV",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/D/\\u516c\\u53f8\\u9879\\u76ee/rainbow/RainbowDao-protocol/contracts/dcv/DCV.sol\":\"DCV\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/\\u516c\\u53f8\\u9879\\u76ee/rainbow/RainbowDao-protocol/contracts/dcv/DCV.sol\":{\"keccak256\":\"0x580fcf2e7cc482dd9540d23ffe6554999675e87bead7da44570ee57f1ae0dfdc\",\"urls\":[\"bzz-raw://679e253387425a1eeaff0570f7c68fd00e0046615bdef4c6be7035d51eb0025a\",\"dweb:/ipfs/QmYEsYLq2azVFeETizgJ75qhWEELmegiXVGQgjBhJxJ3vF\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.8.0;\r\n// import '@openzeppelin/contracts/token/ERC20/IERC20.sol';\r\nabstract contract DCV {\r\n    // function _approveToken(address _token,address sender) internal {\r\n    //     uint256 maxTokens = uint256(-1);\r\n    //     IERC20(_token).approve(sender, maxTokens);\r\n    // }\r\n}\r\n",
+  "sourcePath": "D:/公司项目/rainbow/RainbowDao-protocol/contracts/dcv/DCV.sol",
+  "ast": {
+    "absolutePath": "/D/公司项目/rainbow/RainbowDao-protocol/contracts/dcv/DCV.sol",
+    "exportedSymbols": {
+      "DCV": [
+        3998
+      ]
+    },
+    "id": 3999,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3997,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:10"
+      },
+      {
+        "abstract": true,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 3998,
+        "linearizedBaseContracts": [
+          3998
+        ],
+        "name": "DCV",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 3999,
+        "src": "86:209:10"
+      }
+    ],
+    "src": "0:297:10"
+  },
+  "legacyAST": {
+    "absolutePath": "/D/公司项目/rainbow/RainbowDao-protocol/contracts/dcv/DCV.sol",
+    "exportedSymbols": {
+      "DCV": [
+        3998
+      ]
+    },
+    "id": 3999,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3997,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:10"
+      },
+      {
+        "abstract": true,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 3998,
+        "linearizedBaseContracts": [
+          3998
+        ],
+        "name": "DCV",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 3999,
+        "src": "86:209:10"
+      }
+    ],
+    "src": "0:297:10"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.0+commit.c7dfd78e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-10-08T01:43:00.775Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

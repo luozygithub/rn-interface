@@ -1,0 +1,658 @@
+{
+  "contractName": "ICoreRef",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "_core",
+          "type": "address"
+        }
+      ],
+      "name": "CoreUpdate",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "core",
+          "type": "address"
+        }
+      ],
+      "name": "setCore",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "core",
+      "outputs": [
+        {
+          "internalType": "contract ICore",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "Rbt",
+      "outputs": [
+        {
+          "internalType": "contract IERC20",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"_core\",\"type\":\"address\"}],\"name\":\"CoreUpdate\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"Rbt\",\"outputs\":[{\"internalType\":\"contract IERC20\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"core\",\"outputs\":[{\"internalType\":\"contract ICore\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"core\",\"type\":\"address\"}],\"name\":\"setCore\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/D/\\u516c\\u53f8\\u9879\\u76ee/rainbow/RainbowDao-protocol/contracts/interface/ref/ICoreRef.sol\":\"ICoreRef\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/\\u516c\\u53f8\\u9879\\u76ee/rainbow/RainbowDao-protocol/contracts/interface/core/ICore.sol\":{\"keccak256\":\"0xc83254799ab5b850f09d18ba887054754b823746b7a2558ac5907cdb3affafb3\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f24cd4ecddd7d0bdc01389da43a0890b9643d6b62363ddb2dff28bb7f27ef0ef\",\"dweb:/ipfs/Qma4mkr6g4a9icw4FG7egCjpQTevETks2FAVX1eUgPLQXK\"]},\"/D/\\u516c\\u53f8\\u9879\\u76ee/rainbow/RainbowDao-protocol/contracts/interface/core/IPermissions.sol\":{\"keccak256\":\"0xdc70a21bd523d5ff650c79e06be706dfbae62f9591dcba23f7b38e36271d7452\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ba1b76c99e6b46451455bdfcd058619804b91e8c750169beb5e5b9df3142cd69\",\"dweb:/ipfs/QmXLUZErU6QMyfCUfWJkYCYgmEuaJuSAuzjsDpW5PvWA28\"]},\"/D/\\u516c\\u53f8\\u9879\\u76ee/rainbow/RainbowDao-protocol/contracts/interface/ref/ICoreRef.sol\":{\"keccak256\":\"0x8cca5fede06bd9da6ec8af3cf86e122a9ac6d6f65aca1c261388eefb28eac7ba\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b6239adc19b28d86cee0f961cd54e62c7c2914cc860ca11959e012341f274fdc\",\"dweb:/ipfs/QmUApXDaTWA3e7SdHpQNG9gsYik5jC5XJuCA5XcbqW9osF\"]},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x027b891937d20ccf213fdb9c31531574256de774bda99d3a70ecef6e1913ed2a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://087318b21c528119f649899f5b5580566dd8d7b0303d4904bd0e8580c3545f14\",\"dweb:/ipfs/Qmbn5Mj7aUn8hJuQ8VrQjjEXRsXyJKykgnjR9p4C3nfLtL\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\npragma experimental ABIEncoderV2;\r\n\r\nimport \"../core/ICore.sol\";\r\n\r\n\r\ninterface ICoreRef {\r\n   \r\n    event CoreUpdate(address indexed _core);\r\n\r\n   \r\n    function setCore(address core) external;\r\n    function core() external view returns (ICore);\r\n     function Rbt() external view  returns (IERC20);\r\n    \r\n}",
+  "sourcePath": "D:/公司项目/rainbow/RainbowDao-protocol/contracts/interface/ref/ICoreRef.sol",
+  "ast": {
+    "absolutePath": "/D/公司项目/rainbow/RainbowDao-protocol/contracts/interface/ref/ICoreRef.sol",
+    "exportedSymbols": {
+      "ICore": [
+        94
+      ],
+      "ICoreRef": [
+        390
+      ],
+      "IERC20": [
+        506
+      ],
+      "IPermissions": [
+        163
+      ]
+    },
+    "id": 391,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 366,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:6"
+      },
+      {
+        "id": 367,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "58:33:6"
+      },
+      {
+        "absolutePath": "/D/公司项目/rainbow/RainbowDao-protocol/contracts/interface/core/ICore.sol",
+        "file": "../core/ICore.sol",
+        "id": 368,
+        "nodeType": "ImportDirective",
+        "scope": 391,
+        "sourceUnit": 95,
+        "src": "95:27:6",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 390,
+        "linearizedBaseContracts": [
+          390
+        ],
+        "name": "ICoreRef",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "id": 372,
+            "name": "CoreUpdate",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 371,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 370,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "_core",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 372,
+                  "src": "176:21:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 369,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "176:7:6",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "175:23:6"
+            },
+            "src": "159:40:6"
+          },
+          {
+            "functionSelector": "80009630",
+            "id": 377,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setCore",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 375,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 374,
+                  "mutability": "mutable",
+                  "name": "core",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 377,
+                  "src": "229:12:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 373,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "229:7:6",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "228:14:6"
+            },
+            "returnParameters": {
+              "id": 376,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "251:0:6"
+            },
+            "scope": 390,
+            "src": "212:40:6",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "f2f4eb26",
+            "id": 383,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "core",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 378,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "271:2:6"
+            },
+            "returnParameters": {
+              "id": 382,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 381,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 383,
+                  "src": "297:5:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ICore_$94",
+                    "typeString": "contract ICore"
+                  },
+                  "typeName": {
+                    "id": 380,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 379,
+                      "name": "ICore",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 94,
+                      "src": "297:5:6"
+                    },
+                    "referencedDeclaration": 94,
+                    "src": "297:5:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ICore_$94",
+                      "typeString": "contract ICore"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "296:7:6"
+            },
+            "scope": 390,
+            "src": "258:46:6",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "135b54dd",
+            "id": 389,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "Rbt",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 384,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "323:2:6"
+            },
+            "returnParameters": {
+              "id": 388,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 387,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 389,
+                  "src": "350:6:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IERC20_$506",
+                    "typeString": "contract IERC20"
+                  },
+                  "typeName": {
+                    "id": 386,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 385,
+                      "name": "IERC20",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 506,
+                      "src": "350:6:6"
+                    },
+                    "referencedDeclaration": 506,
+                    "src": "350:6:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IERC20_$506",
+                      "typeString": "contract IERC20"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "349:8:6"
+            },
+            "scope": 390,
+            "src": "311:47:6",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 391,
+        "src": "128:239:6"
+      }
+    ],
+    "src": "33:334:6"
+  },
+  "legacyAST": {
+    "absolutePath": "/D/公司项目/rainbow/RainbowDao-protocol/contracts/interface/ref/ICoreRef.sol",
+    "exportedSymbols": {
+      "ICore": [
+        94
+      ],
+      "ICoreRef": [
+        390
+      ],
+      "IERC20": [
+        506
+      ],
+      "IPermissions": [
+        163
+      ]
+    },
+    "id": 391,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 366,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:6"
+      },
+      {
+        "id": 367,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "58:33:6"
+      },
+      {
+        "absolutePath": "/D/公司项目/rainbow/RainbowDao-protocol/contracts/interface/core/ICore.sol",
+        "file": "../core/ICore.sol",
+        "id": 368,
+        "nodeType": "ImportDirective",
+        "scope": 391,
+        "sourceUnit": 95,
+        "src": "95:27:6",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 390,
+        "linearizedBaseContracts": [
+          390
+        ],
+        "name": "ICoreRef",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "id": 372,
+            "name": "CoreUpdate",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 371,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 370,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "_core",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 372,
+                  "src": "176:21:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 369,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "176:7:6",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "175:23:6"
+            },
+            "src": "159:40:6"
+          },
+          {
+            "functionSelector": "80009630",
+            "id": 377,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setCore",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 375,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 374,
+                  "mutability": "mutable",
+                  "name": "core",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 377,
+                  "src": "229:12:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 373,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "229:7:6",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "228:14:6"
+            },
+            "returnParameters": {
+              "id": 376,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "251:0:6"
+            },
+            "scope": 390,
+            "src": "212:40:6",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "f2f4eb26",
+            "id": 383,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "core",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 378,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "271:2:6"
+            },
+            "returnParameters": {
+              "id": 382,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 381,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 383,
+                  "src": "297:5:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ICore_$94",
+                    "typeString": "contract ICore"
+                  },
+                  "typeName": {
+                    "id": 380,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 379,
+                      "name": "ICore",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 94,
+                      "src": "297:5:6"
+                    },
+                    "referencedDeclaration": 94,
+                    "src": "297:5:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ICore_$94",
+                      "typeString": "contract ICore"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "296:7:6"
+            },
+            "scope": 390,
+            "src": "258:46:6",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "135b54dd",
+            "id": 389,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "Rbt",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 384,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "323:2:6"
+            },
+            "returnParameters": {
+              "id": 388,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 387,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 389,
+                  "src": "350:6:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IERC20_$506",
+                    "typeString": "contract IERC20"
+                  },
+                  "typeName": {
+                    "id": 386,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 385,
+                      "name": "IERC20",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 506,
+                      "src": "350:6:6"
+                    },
+                    "referencedDeclaration": 506,
+                    "src": "350:6:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IERC20_$506",
+                      "typeString": "contract IERC20"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "349:8:6"
+            },
+            "scope": 390,
+            "src": "311:47:6",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 391,
+        "src": "128:239:6"
+      }
+    ],
+    "src": "33:334:6"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.0+commit.c7dfd78e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-10-08T01:59:30.686Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

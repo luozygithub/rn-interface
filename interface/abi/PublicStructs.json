@@ -1,0 +1,1003 @@
+{
+  "contractName": "PublicStructs",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/D/\\u516c\\u53f8\\u9879\\u76ee/rainbow/RainbowDao-protocol/contracts/utils/PublicStructs.sol\":\"PublicStructs\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/\\u516c\\u53f8\\u9879\\u76ee/rainbow/RainbowDao-protocol/contracts/interface/gov/ICommunityGovernanceFund.sol\":{\"keccak256\":\"0xe32f479f57149e68af8aa3532a1856c11042808b8932c12b926de2af971bda21\",\"urls\":[\"bzz-raw://030fa240c5504eaf968d2c5e6b0cdbf98cf45ec09812b3a969cc3bc4e394b14a\",\"dweb:/ipfs/QmefYxp6EMAhmr3wnj2RSgPrCC7yerm4MjygrDgpeLUEKB\"]},\"/D/\\u516c\\u53f8\\u9879\\u76ee/rainbow/RainbowDao-protocol/contracts/interface/gov/IParliament.sol\":{\"keccak256\":\"0xf9f5a864214f8b1e6bdda0a423a20183509ec3c1608847cea80745a10ea5947a\",\"urls\":[\"bzz-raw://762ffcff07d66d459c6b851339d7fa0db57fa596fa04c741339f5d462e52638f\",\"dweb:/ipfs/QmRwAacTP1t1cXsruEoBWfWA4z7xv5VKbHgp2a45vYLfhG\"]},\"/D/\\u516c\\u53f8\\u9879\\u76ee/rainbow/RainbowDao-protocol/contracts/utils/PublicStructs.sol\":{\"keccak256\":\"0xd8ae8dd111e334cc1fac29acfc91472a9ec73f075e682b5c679cc3dc390321fc\",\"urls\":[\"bzz-raw://25f0c3c03ee027c4f0d6da1ba3c36cef4db2683ae4e107cb09384b4652346c26\",\"dweb:/ipfs/QmV6AbkLExPVkAh4yYXXZMSTkV62h7aB6CnxHwiqe6wex6\"]},\"@openzeppelin/contracts/utils/structs/EnumerableSet.sol\":{\"keccak256\":\"0x3778dc944f4a696335878bad8beca60f38b7c79b7a0bd8ddbeb618bd502a95ae\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://12961fd593c79b60088c8829fd760db4149790b1c702411919fac76769e8c39a\",\"dweb:/ipfs/QmXN79ZS3btSrPhiMBWtWmdwaWKjYTaAYpVMt5QHvwwKMw\"]}},\"version\":1}",
+  "bytecode": "0x60566037600b82828239805160001a607314602a57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212201619bb38aec88ed6ccef0e7b961793ceab76437872e93f32dbcbb1243533379164736f6c63430008000033",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212201619bb38aec88ed6ccef0e7b961793ceab76437872e93f32dbcbb1243533379164736f6c63430008000033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "195:485:7:-:0;;;;;;;;;;;;;;;-1:-1:-1;;;195:485:7;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "195:485:7:-:0;;;;;;;;",
+  "source": "pragma solidity ^0.8.0;\r\nimport '@openzeppelin/contracts/utils/structs/EnumerableSet.sol';\r\nimport '../interface/gov/ICommunityGovernanceFund.sol';\r\nimport '../interface/gov/IParliament.sol';\r\n\r\nlibrary PublicStructs {\r\n  struct Impeach {\r\n    uint id;\r\n    uint nodeId;\r\n    ICommunityGovernanceFund gov;\r\n    IParliament icn;\r\n    uint tickets;\r\n    address acceptor; // 被弹的人\r\n    address sponsor; //发起人\r\n    uint creationTime;\r\n    bool success;\r\n    uint impeachtype;\r\n    uint amount; //抵押的rbt数量\r\n    uint voteId;\r\n    // mapping(address => uint) voter; //投票人\r\n  }\r\n\r\n  struct parliamentApply {\r\n    address account;\r\n    uint tickets;\r\n  }\r\n\r\n}",
+  "sourcePath": "D:/公司项目/rainbow/RainbowDao-protocol/contracts/utils/PublicStructs.sol",
+  "ast": {
+    "absolutePath": "/D/公司项目/rainbow/RainbowDao-protocol/contracts/utils/PublicStructs.sol",
+    "exportedSymbols": {
+      "EnumerableSet": [
+        1105
+      ],
+      "ICommunityGovernanceFund": [
+        243
+      ],
+      "IParliament": [
+        356
+      ],
+      "PublicStructs": [
+        428
+      ]
+    },
+    "id": 429,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 392,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:7"
+      },
+      {
+        "absolutePath": "@openzeppelin/contracts/utils/structs/EnumerableSet.sol",
+        "file": "@openzeppelin/contracts/utils/structs/EnumerableSet.sol",
+        "id": 393,
+        "nodeType": "ImportDirective",
+        "scope": 429,
+        "sourceUnit": 1106,
+        "src": "25:65:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/D/公司项目/rainbow/RainbowDao-protocol/contracts/interface/gov/ICommunityGovernanceFund.sol",
+        "file": "../interface/gov/ICommunityGovernanceFund.sol",
+        "id": 394,
+        "nodeType": "ImportDirective",
+        "scope": 429,
+        "sourceUnit": 244,
+        "src": "92:55:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/D/公司项目/rainbow/RainbowDao-protocol/contracts/interface/gov/IParliament.sol",
+        "file": "../interface/gov/IParliament.sol",
+        "id": 395,
+        "nodeType": "ImportDirective",
+        "scope": 429,
+        "sourceUnit": 357,
+        "src": "149:42:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "library",
+        "fullyImplemented": true,
+        "id": 428,
+        "linearizedBaseContracts": [
+          428
+        ],
+        "name": "PublicStructs",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "PublicStructs.Impeach",
+            "id": 422,
+            "members": [
+              {
+                "constant": false,
+                "id": 397,
+                "mutability": "mutable",
+                "name": "id",
+                "nodeType": "VariableDeclaration",
+                "scope": 422,
+                "src": "244:7:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 396,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "244:4:7",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 399,
+                "mutability": "mutable",
+                "name": "nodeId",
+                "nodeType": "VariableDeclaration",
+                "scope": 422,
+                "src": "258:11:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 398,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "258:4:7",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 402,
+                "mutability": "mutable",
+                "name": "gov",
+                "nodeType": "VariableDeclaration",
+                "scope": 422,
+                "src": "276:28:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_contract$_ICommunityGovernanceFund_$243",
+                  "typeString": "contract ICommunityGovernanceFund"
+                },
+                "typeName": {
+                  "id": 401,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 400,
+                    "name": "ICommunityGovernanceFund",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 243,
+                    "src": "276:24:7"
+                  },
+                  "referencedDeclaration": 243,
+                  "src": "276:24:7",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ICommunityGovernanceFund_$243",
+                    "typeString": "contract ICommunityGovernanceFund"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 405,
+                "mutability": "mutable",
+                "name": "icn",
+                "nodeType": "VariableDeclaration",
+                "scope": 422,
+                "src": "311:15:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_contract$_IParliament_$356",
+                  "typeString": "contract IParliament"
+                },
+                "typeName": {
+                  "id": 404,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 403,
+                    "name": "IParliament",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 356,
+                    "src": "311:11:7"
+                  },
+                  "referencedDeclaration": 356,
+                  "src": "311:11:7",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IParliament_$356",
+                    "typeString": "contract IParliament"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 407,
+                "mutability": "mutable",
+                "name": "tickets",
+                "nodeType": "VariableDeclaration",
+                "scope": 422,
+                "src": "333:12:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 406,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "333:4:7",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 409,
+                "mutability": "mutable",
+                "name": "acceptor",
+                "nodeType": "VariableDeclaration",
+                "scope": 422,
+                "src": "352:16:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 408,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "352:7:7",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 411,
+                "mutability": "mutable",
+                "name": "sponsor",
+                "nodeType": "VariableDeclaration",
+                "scope": 422,
+                "src": "391:15:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 410,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "391:7:7",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 413,
+                "mutability": "mutable",
+                "name": "creationTime",
+                "nodeType": "VariableDeclaration",
+                "scope": 422,
+                "src": "425:17:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 412,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "425:4:7",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 415,
+                "mutability": "mutable",
+                "name": "success",
+                "nodeType": "VariableDeclaration",
+                "scope": 422,
+                "src": "449:12:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 414,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "449:4:7",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 417,
+                "mutability": "mutable",
+                "name": "impeachtype",
+                "nodeType": "VariableDeclaration",
+                "scope": 422,
+                "src": "468:16:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 416,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "468:4:7",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 419,
+                "mutability": "mutable",
+                "name": "amount",
+                "nodeType": "VariableDeclaration",
+                "scope": 422,
+                "src": "491:11:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 418,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "491:4:7",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 421,
+                "mutability": "mutable",
+                "name": "voteId",
+                "nodeType": "VariableDeclaration",
+                "scope": 422,
+                "src": "530:11:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 420,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "530:4:7",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "Impeach",
+            "nodeType": "StructDefinition",
+            "scope": 428,
+            "src": "222:377:7",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "PublicStructs.parliamentApply",
+            "id": 427,
+            "members": [
+              {
+                "constant": false,
+                "id": 424,
+                "mutability": "mutable",
+                "name": "account",
+                "nodeType": "VariableDeclaration",
+                "scope": 427,
+                "src": "635:15:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 423,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "635:7:7",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 426,
+                "mutability": "mutable",
+                "name": "tickets",
+                "nodeType": "VariableDeclaration",
+                "scope": 427,
+                "src": "657:12:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 425,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "657:4:7",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "parliamentApply",
+            "nodeType": "StructDefinition",
+            "scope": 428,
+            "src": "605:70:7",
+            "visibility": "public"
+          }
+        ],
+        "scope": 429,
+        "src": "195:485:7"
+      }
+    ],
+    "src": "0:680:7"
+  },
+  "legacyAST": {
+    "absolutePath": "/D/公司项目/rainbow/RainbowDao-protocol/contracts/utils/PublicStructs.sol",
+    "exportedSymbols": {
+      "EnumerableSet": [
+        1105
+      ],
+      "ICommunityGovernanceFund": [
+        243
+      ],
+      "IParliament": [
+        356
+      ],
+      "PublicStructs": [
+        428
+      ]
+    },
+    "id": 429,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 392,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:7"
+      },
+      {
+        "absolutePath": "@openzeppelin/contracts/utils/structs/EnumerableSet.sol",
+        "file": "@openzeppelin/contracts/utils/structs/EnumerableSet.sol",
+        "id": 393,
+        "nodeType": "ImportDirective",
+        "scope": 429,
+        "sourceUnit": 1106,
+        "src": "25:65:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/D/公司项目/rainbow/RainbowDao-protocol/contracts/interface/gov/ICommunityGovernanceFund.sol",
+        "file": "../interface/gov/ICommunityGovernanceFund.sol",
+        "id": 394,
+        "nodeType": "ImportDirective",
+        "scope": 429,
+        "sourceUnit": 244,
+        "src": "92:55:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/D/公司项目/rainbow/RainbowDao-protocol/contracts/interface/gov/IParliament.sol",
+        "file": "../interface/gov/IParliament.sol",
+        "id": 395,
+        "nodeType": "ImportDirective",
+        "scope": 429,
+        "sourceUnit": 357,
+        "src": "149:42:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "library",
+        "fullyImplemented": true,
+        "id": 428,
+        "linearizedBaseContracts": [
+          428
+        ],
+        "name": "PublicStructs",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "PublicStructs.Impeach",
+            "id": 422,
+            "members": [
+              {
+                "constant": false,
+                "id": 397,
+                "mutability": "mutable",
+                "name": "id",
+                "nodeType": "VariableDeclaration",
+                "scope": 422,
+                "src": "244:7:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 396,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "244:4:7",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 399,
+                "mutability": "mutable",
+                "name": "nodeId",
+                "nodeType": "VariableDeclaration",
+                "scope": 422,
+                "src": "258:11:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 398,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "258:4:7",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 402,
+                "mutability": "mutable",
+                "name": "gov",
+                "nodeType": "VariableDeclaration",
+                "scope": 422,
+                "src": "276:28:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_contract$_ICommunityGovernanceFund_$243",
+                  "typeString": "contract ICommunityGovernanceFund"
+                },
+                "typeName": {
+                  "id": 401,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 400,
+                    "name": "ICommunityGovernanceFund",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 243,
+                    "src": "276:24:7"
+                  },
+                  "referencedDeclaration": 243,
+                  "src": "276:24:7",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ICommunityGovernanceFund_$243",
+                    "typeString": "contract ICommunityGovernanceFund"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 405,
+                "mutability": "mutable",
+                "name": "icn",
+                "nodeType": "VariableDeclaration",
+                "scope": 422,
+                "src": "311:15:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_contract$_IParliament_$356",
+                  "typeString": "contract IParliament"
+                },
+                "typeName": {
+                  "id": 404,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 403,
+                    "name": "IParliament",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 356,
+                    "src": "311:11:7"
+                  },
+                  "referencedDeclaration": 356,
+                  "src": "311:11:7",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IParliament_$356",
+                    "typeString": "contract IParliament"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 407,
+                "mutability": "mutable",
+                "name": "tickets",
+                "nodeType": "VariableDeclaration",
+                "scope": 422,
+                "src": "333:12:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 406,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "333:4:7",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 409,
+                "mutability": "mutable",
+                "name": "acceptor",
+                "nodeType": "VariableDeclaration",
+                "scope": 422,
+                "src": "352:16:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 408,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "352:7:7",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 411,
+                "mutability": "mutable",
+                "name": "sponsor",
+                "nodeType": "VariableDeclaration",
+                "scope": 422,
+                "src": "391:15:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 410,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "391:7:7",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 413,
+                "mutability": "mutable",
+                "name": "creationTime",
+                "nodeType": "VariableDeclaration",
+                "scope": 422,
+                "src": "425:17:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 412,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "425:4:7",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 415,
+                "mutability": "mutable",
+                "name": "success",
+                "nodeType": "VariableDeclaration",
+                "scope": 422,
+                "src": "449:12:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 414,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "449:4:7",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 417,
+                "mutability": "mutable",
+                "name": "impeachtype",
+                "nodeType": "VariableDeclaration",
+                "scope": 422,
+                "src": "468:16:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 416,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "468:4:7",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 419,
+                "mutability": "mutable",
+                "name": "amount",
+                "nodeType": "VariableDeclaration",
+                "scope": 422,
+                "src": "491:11:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 418,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "491:4:7",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 421,
+                "mutability": "mutable",
+                "name": "voteId",
+                "nodeType": "VariableDeclaration",
+                "scope": 422,
+                "src": "530:11:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 420,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "530:4:7",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "Impeach",
+            "nodeType": "StructDefinition",
+            "scope": 428,
+            "src": "222:377:7",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "PublicStructs.parliamentApply",
+            "id": 427,
+            "members": [
+              {
+                "constant": false,
+                "id": 424,
+                "mutability": "mutable",
+                "name": "account",
+                "nodeType": "VariableDeclaration",
+                "scope": 427,
+                "src": "635:15:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 423,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "635:7:7",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 426,
+                "mutability": "mutable",
+                "name": "tickets",
+                "nodeType": "VariableDeclaration",
+                "scope": 427,
+                "src": "657:12:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 425,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "657:4:7",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "parliamentApply",
+            "nodeType": "StructDefinition",
+            "scope": 428,
+            "src": "605:70:7",
+            "visibility": "public"
+          }
+        ],
+        "scope": 429,
+        "src": "195:485:7"
+      }
+    ],
+    "src": "0:680:7"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.0+commit.c7dfd78e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-10-08T01:59:30.688Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

@@ -1,0 +1,501 @@
+{
+  "contractName": "VoteIdRef",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "voteIdAddress",
+      "outputs": [
+        {
+          "internalType": "contract IVoteId",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"voteIdAddress\",\"outputs\":[{\"internalType\":\"contract IVoteId\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/D/\\u516c\\u53f8\\u9879\\u76ee/rainbow/RainbowDao-protocol/contracts/ref/VoteIdRef.sol\":\"VoteIdRef\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/\\u516c\\u53f8\\u9879\\u76ee/rainbow/RainbowDao-protocol/contracts/interface/gov/IVoteId.sol\":{\"keccak256\":\"0x5f268c2ded07f7d91e5e7745ab2ddda0124965136bd31682851106c919e40606\",\"urls\":[\"bzz-raw://717aca7600b0ea4d5339c8962b86d134f675887a95ec4a2edf6fded0bcae8e28\",\"dweb:/ipfs/QmXWCgrfrr48JzMN9JBZhQ3aXmVKeHMAuhE4sHeujcRJYT\"]},\"/D/\\u516c\\u53f8\\u9879\\u76ee/rainbow/RainbowDao-protocol/contracts/ref/VoteIdRef.sol\":{\"keccak256\":\"0x6af7670ae541d75e8c69907f35674f97f6e908534cd4e86f25ccb80c45c65e8b\",\"urls\":[\"bzz-raw://3027e432f5bcfee03407004aa0cc3256180571f6960cc5c9e2800f468ee89285\",\"dweb:/ipfs/QmVUT6gXagjo76hpvzLbhNWzarwFsnvr5WEiaBMYmaMbTX\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.8.0;\r\nimport '../interface/gov/IVoteId.sol';\r\nabstract contract VoteIdRef {\r\n    IVoteId public voteIdAddress;\r\n    constructor(address voteIdAddr)  {\r\n        voteIdAddress = IVoteId(voteIdAddr);\r\n    }\r\n}",
+  "sourcePath": "D:/公司项目/rainbow/RainbowDao-protocol/contracts/ref/VoteIdRef.sol",
+  "ast": {
+    "absolutePath": "/D/公司项目/rainbow/RainbowDao-protocol/contracts/ref/VoteIdRef.sol",
+    "exportedSymbols": {
+      "IVoteId": [
+        516
+      ],
+      "VoteIdRef": [
+        1855
+      ]
+    },
+    "id": 1856,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1838,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:19"
+      },
+      {
+        "absolutePath": "/D/公司项目/rainbow/RainbowDao-protocol/contracts/interface/gov/IVoteId.sol",
+        "file": "../interface/gov/IVoteId.sol",
+        "id": 1839,
+        "nodeType": "ImportDirective",
+        "scope": 1856,
+        "sourceUnit": 517,
+        "src": "25:38:19",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": true,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 1855,
+        "linearizedBaseContracts": [
+          1855
+        ],
+        "name": "VoteIdRef",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "functionSelector": "99a723e4",
+            "id": 1842,
+            "mutability": "mutable",
+            "name": "voteIdAddress",
+            "nodeType": "VariableDeclaration",
+            "scope": 1855,
+            "src": "100:28:19",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_IVoteId_$516",
+              "typeString": "contract IVoteId"
+            },
+            "typeName": {
+              "id": 1841,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 1840,
+                "name": "IVoteId",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 516,
+                "src": "100:7:19"
+              },
+              "referencedDeclaration": 516,
+              "src": "100:7:19",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IVoteId_$516",
+                "typeString": "contract IVoteId"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 1853,
+              "nodeType": "Block",
+              "src": "168:54:19",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 1851,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 1847,
+                      "name": "voteIdAddress",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1842,
+                      "src": "179:13:19",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IVoteId_$516",
+                        "typeString": "contract IVoteId"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "id": 1849,
+                          "name": "voteIdAddr",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1844,
+                          "src": "203:10:19",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 1848,
+                        "name": "IVoteId",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 516,
+                        "src": "195:7:19",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_IVoteId_$516_$",
+                          "typeString": "type(contract IVoteId)"
+                        }
+                      },
+                      "id": 1850,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "195:19:19",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IVoteId_$516",
+                        "typeString": "contract IVoteId"
+                      }
+                    },
+                    "src": "179:35:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IVoteId_$516",
+                      "typeString": "contract IVoteId"
+                    }
+                  },
+                  "id": 1852,
+                  "nodeType": "ExpressionStatement",
+                  "src": "179:35:19"
+                }
+              ]
+            },
+            "id": 1854,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1845,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1844,
+                  "mutability": "mutable",
+                  "name": "voteIdAddr",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1854,
+                  "src": "147:18:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1843,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "147:7:19",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "146:20:19"
+            },
+            "returnParameters": {
+              "id": 1846,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "168:0:19"
+            },
+            "scope": 1855,
+            "src": "135:87:19",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 1856,
+        "src": "65:160:19"
+      }
+    ],
+    "src": "0:225:19"
+  },
+  "legacyAST": {
+    "absolutePath": "/D/公司项目/rainbow/RainbowDao-protocol/contracts/ref/VoteIdRef.sol",
+    "exportedSymbols": {
+      "IVoteId": [
+        516
+      ],
+      "VoteIdRef": [
+        1855
+      ]
+    },
+    "id": 1856,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1838,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:19"
+      },
+      {
+        "absolutePath": "/D/公司项目/rainbow/RainbowDao-protocol/contracts/interface/gov/IVoteId.sol",
+        "file": "../interface/gov/IVoteId.sol",
+        "id": 1839,
+        "nodeType": "ImportDirective",
+        "scope": 1856,
+        "sourceUnit": 517,
+        "src": "25:38:19",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": true,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 1855,
+        "linearizedBaseContracts": [
+          1855
+        ],
+        "name": "VoteIdRef",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "functionSelector": "99a723e4",
+            "id": 1842,
+            "mutability": "mutable",
+            "name": "voteIdAddress",
+            "nodeType": "VariableDeclaration",
+            "scope": 1855,
+            "src": "100:28:19",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_IVoteId_$516",
+              "typeString": "contract IVoteId"
+            },
+            "typeName": {
+              "id": 1841,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 1840,
+                "name": "IVoteId",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 516,
+                "src": "100:7:19"
+              },
+              "referencedDeclaration": 516,
+              "src": "100:7:19",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IVoteId_$516",
+                "typeString": "contract IVoteId"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 1853,
+              "nodeType": "Block",
+              "src": "168:54:19",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 1851,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 1847,
+                      "name": "voteIdAddress",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1842,
+                      "src": "179:13:19",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IVoteId_$516",
+                        "typeString": "contract IVoteId"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "id": 1849,
+                          "name": "voteIdAddr",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1844,
+                          "src": "203:10:19",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 1848,
+                        "name": "IVoteId",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 516,
+                        "src": "195:7:19",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_IVoteId_$516_$",
+                          "typeString": "type(contract IVoteId)"
+                        }
+                      },
+                      "id": 1850,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "195:19:19",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IVoteId_$516",
+                        "typeString": "contract IVoteId"
+                      }
+                    },
+                    "src": "179:35:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IVoteId_$516",
+                      "typeString": "contract IVoteId"
+                    }
+                  },
+                  "id": 1852,
+                  "nodeType": "ExpressionStatement",
+                  "src": "179:35:19"
+                }
+              ]
+            },
+            "id": 1854,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1845,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1844,
+                  "mutability": "mutable",
+                  "name": "voteIdAddr",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1854,
+                  "src": "147:18:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1843,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "147:7:19",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "146:20:19"
+            },
+            "returnParameters": {
+              "id": 1846,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "168:0:19"
+            },
+            "scope": 1855,
+            "src": "135:87:19",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 1856,
+        "src": "65:160:19"
+      }
+    ],
+    "src": "0:225:19"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.0+commit.c7dfd78e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-10-08T01:52:10.128Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

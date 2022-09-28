@@ -1,0 +1,714 @@
+{
+  "contractName": "IImpeach",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        }
+      ],
+      "name": "getImpeach",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "nodeId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "contract ICommunityGovernanceFund",
+              "name": "gov",
+              "type": "address"
+            },
+            {
+              "internalType": "contract IParliament",
+              "name": "icn",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "tickets",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "acceptor",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "sponsor",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "creationTime",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "success",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "impeachtype",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "voteId",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct PublicStructs.Impeach",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "tickets",
+          "type": "uint256"
+        }
+      ],
+      "name": "setImpeachTickets",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        }
+      ],
+      "name": "setImpeachSuccess",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"getImpeach\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"nodeId\",\"type\":\"uint256\"},{\"internalType\":\"contract ICommunityGovernanceFund\",\"name\":\"gov\",\"type\":\"address\"},{\"internalType\":\"contract IParliament\",\"name\":\"icn\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tickets\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"acceptor\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"sponsor\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"creationTime\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"success\",\"type\":\"bool\"},{\"internalType\":\"uint256\",\"name\":\"impeachtype\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"voteId\",\"type\":\"uint256\"}],\"internalType\":\"struct PublicStructs.Impeach\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"setImpeachSuccess\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"tickets\",\"type\":\"uint256\"}],\"name\":\"setImpeachTickets\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/D/\\u516c\\u53f8\\u9879\\u76ee/rainbow/RainbowDao-protocol/contracts/interface/gov/IImpeach.sol\":\"IImpeach\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/\\u516c\\u53f8\\u9879\\u76ee/rainbow/RainbowDao-protocol/contracts/interface/gov/ICommunityGovernanceFund.sol\":{\"keccak256\":\"0xe32f479f57149e68af8aa3532a1856c11042808b8932c12b926de2af971bda21\",\"urls\":[\"bzz-raw://030fa240c5504eaf968d2c5e6b0cdbf98cf45ec09812b3a969cc3bc4e394b14a\",\"dweb:/ipfs/QmefYxp6EMAhmr3wnj2RSgPrCC7yerm4MjygrDgpeLUEKB\"]},\"/D/\\u516c\\u53f8\\u9879\\u76ee/rainbow/RainbowDao-protocol/contracts/interface/gov/IImpeach.sol\":{\"keccak256\":\"0xdbb1060485a306c48a8ea1a7d73d6bffdc0974dfd9d32d374951481c82fd6329\",\"urls\":[\"bzz-raw://4b77e7b0597a91e7c8b14a86d7a942e88dfc6afa3d253f136dab6448cb616cea\",\"dweb:/ipfs/QmSLgqgxQvZk4MYWYRgB1f8ajiQYuqAFHW7L8U9GXc9UmG\"]},\"/D/\\u516c\\u53f8\\u9879\\u76ee/rainbow/RainbowDao-protocol/contracts/interface/gov/IParliament.sol\":{\"keccak256\":\"0xf9f5a864214f8b1e6bdda0a423a20183509ec3c1608847cea80745a10ea5947a\",\"urls\":[\"bzz-raw://762ffcff07d66d459c6b851339d7fa0db57fa596fa04c741339f5d462e52638f\",\"dweb:/ipfs/QmRwAacTP1t1cXsruEoBWfWA4z7xv5VKbHgp2a45vYLfhG\"]},\"/D/\\u516c\\u53f8\\u9879\\u76ee/rainbow/RainbowDao-protocol/contracts/utils/PublicStructs.sol\":{\"keccak256\":\"0xd8ae8dd111e334cc1fac29acfc91472a9ec73f075e682b5c679cc3dc390321fc\",\"urls\":[\"bzz-raw://25f0c3c03ee027c4f0d6da1ba3c36cef4db2683ae4e107cb09384b4652346c26\",\"dweb:/ipfs/QmV6AbkLExPVkAh4yYXXZMSTkV62h7aB6CnxHwiqe6wex6\"]},\"@openzeppelin/contracts/utils/structs/EnumerableSet.sol\":{\"keccak256\":\"0x3778dc944f4a696335878bad8beca60f38b7c79b7a0bd8ddbeb618bd502a95ae\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://12961fd593c79b60088c8829fd760db4149790b1c702411919fac76769e8c39a\",\"dweb:/ipfs/QmXN79ZS3btSrPhiMBWtWmdwaWKjYTaAYpVMt5QHvwwKMw\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.8.0;\r\n\r\nimport {PublicStructs} from '../../utils/PublicStructs.sol';\r\n\r\ninterface IImpeach {\r\n    function getImpeach(uint id) external view returns (PublicStructs.Impeach memory);\r\n\r\n    function setImpeachTickets(uint id, uint tickets) external;\r\n\r\n    function setImpeachSuccess(uint id) external;\r\n}\r\n",
+  "sourcePath": "D:/公司项目/rainbow/RainbowDao-protocol/contracts/interface/gov/IImpeach.sol",
+  "ast": {
+    "absolutePath": "/D/公司项目/rainbow/RainbowDao-protocol/contracts/interface/gov/IImpeach.sol",
+    "exportedSymbols": {
+      "IImpeach": [
+        1040
+      ],
+      "PublicStructs": [
+        6213
+      ]
+    },
+    "id": 1041,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1017,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:15"
+      },
+      {
+        "absolutePath": "/D/公司项目/rainbow/RainbowDao-protocol/contracts/utils/PublicStructs.sol",
+        "file": "../../utils/PublicStructs.sol",
+        "id": 1019,
+        "nodeType": "ImportDirective",
+        "scope": 1041,
+        "sourceUnit": 6214,
+        "src": "27:60:15",
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 1018,
+              "name": "PublicStructs",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "src": "35:13:15",
+              "typeDescriptions": {}
+            }
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 1040,
+        "linearizedBaseContracts": [
+          1040
+        ],
+        "name": "IImpeach",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "58748ecc",
+            "id": 1027,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getImpeach",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1022,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1021,
+                  "mutability": "mutable",
+                  "name": "id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1027,
+                  "src": "137:7:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1020,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "137:4:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "136:9:15"
+            },
+            "returnParameters": {
+              "id": 1026,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1025,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1027,
+                  "src": "169:28:15",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Impeach_$6207_memory_ptr",
+                    "typeString": "struct PublicStructs.Impeach"
+                  },
+                  "typeName": {
+                    "id": 1024,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 1023,
+                      "name": "PublicStructs.Impeach",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 6207,
+                      "src": "169:21:15"
+                    },
+                    "referencedDeclaration": 6207,
+                    "src": "169:21:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Impeach_$6207_storage_ptr",
+                      "typeString": "struct PublicStructs.Impeach"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "168:30:15"
+            },
+            "scope": 1040,
+            "src": "117:82:15",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "e934f98f",
+            "id": 1034,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setImpeachTickets",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1032,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1029,
+                  "mutability": "mutable",
+                  "name": "id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1034,
+                  "src": "234:7:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1028,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "234:4:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1031,
+                  "mutability": "mutable",
+                  "name": "tickets",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1034,
+                  "src": "243:12:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1030,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "243:4:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "233:23:15"
+            },
+            "returnParameters": {
+              "id": 1033,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "265:0:15"
+            },
+            "scope": 1040,
+            "src": "207:59:15",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "e689692f",
+            "id": 1039,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setImpeachSuccess",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1037,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1036,
+                  "mutability": "mutable",
+                  "name": "id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1039,
+                  "src": "301:7:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1035,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "301:4:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "300:9:15"
+            },
+            "returnParameters": {
+              "id": 1038,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "318:0:15"
+            },
+            "scope": 1040,
+            "src": "274:45:15",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1041,
+        "src": "91:231:15"
+      }
+    ],
+    "src": "0:324:15"
+  },
+  "legacyAST": {
+    "absolutePath": "/D/公司项目/rainbow/RainbowDao-protocol/contracts/interface/gov/IImpeach.sol",
+    "exportedSymbols": {
+      "IImpeach": [
+        1040
+      ],
+      "PublicStructs": [
+        6213
+      ]
+    },
+    "id": 1041,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1017,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:15"
+      },
+      {
+        "absolutePath": "/D/公司项目/rainbow/RainbowDao-protocol/contracts/utils/PublicStructs.sol",
+        "file": "../../utils/PublicStructs.sol",
+        "id": 1019,
+        "nodeType": "ImportDirective",
+        "scope": 1041,
+        "sourceUnit": 6214,
+        "src": "27:60:15",
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 1018,
+              "name": "PublicStructs",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "src": "35:13:15",
+              "typeDescriptions": {}
+            }
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 1040,
+        "linearizedBaseContracts": [
+          1040
+        ],
+        "name": "IImpeach",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "58748ecc",
+            "id": 1027,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getImpeach",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1022,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1021,
+                  "mutability": "mutable",
+                  "name": "id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1027,
+                  "src": "137:7:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1020,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "137:4:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "136:9:15"
+            },
+            "returnParameters": {
+              "id": 1026,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1025,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1027,
+                  "src": "169:28:15",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Impeach_$6207_memory_ptr",
+                    "typeString": "struct PublicStructs.Impeach"
+                  },
+                  "typeName": {
+                    "id": 1024,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 1023,
+                      "name": "PublicStructs.Impeach",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 6207,
+                      "src": "169:21:15"
+                    },
+                    "referencedDeclaration": 6207,
+                    "src": "169:21:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Impeach_$6207_storage_ptr",
+                      "typeString": "struct PublicStructs.Impeach"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "168:30:15"
+            },
+            "scope": 1040,
+            "src": "117:82:15",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "e934f98f",
+            "id": 1034,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setImpeachTickets",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1032,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1029,
+                  "mutability": "mutable",
+                  "name": "id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1034,
+                  "src": "234:7:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1028,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "234:4:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1031,
+                  "mutability": "mutable",
+                  "name": "tickets",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1034,
+                  "src": "243:12:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1030,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "243:4:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "233:23:15"
+            },
+            "returnParameters": {
+              "id": 1033,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "265:0:15"
+            },
+            "scope": 1040,
+            "src": "207:59:15",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "e689692f",
+            "id": 1039,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setImpeachSuccess",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1037,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1036,
+                  "mutability": "mutable",
+                  "name": "id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1039,
+                  "src": "301:7:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1035,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "301:4:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "300:9:15"
+            },
+            "returnParameters": {
+              "id": 1038,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "318:0:15"
+            },
+            "scope": 1040,
+            "src": "274:45:15",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1041,
+        "src": "91:231:15"
+      }
+    ],
+    "src": "0:324:15"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.0+commit.c7dfd78e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-10-08T01:47:40.953Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

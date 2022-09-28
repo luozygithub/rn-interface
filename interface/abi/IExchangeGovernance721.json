@@ -1,0 +1,292 @@
+{
+  "contractName": "IExchangeGovernance721",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "_address",
+          "type": "address"
+        }
+      ],
+      "name": "addNftToken",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"_address\",\"type\":\"address\"}],\"name\":\"addNftToken\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/D/\\u516c\\u53f8\\u9879\\u76ee/rainbow/RainbowDao-protocol/contracts/interface/IExchangeGovernance721.sol\":\"IExchangeGovernance721\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/\\u516c\\u53f8\\u9879\\u76ee/rainbow/RainbowDao-protocol/contracts/interface/IExchangeGovernance721.sol\":{\"keccak256\":\"0xfbceeb9671e39b3d757ba176c36646d4c71ba50ad06a64df02c9d484e69ce978\",\"urls\":[\"bzz-raw://f3b3e46b026ddac85b136bcff7730694066cfc617afbf9040fa3b9e7db07586b\",\"dweb:/ipfs/QmePUeAa4vkh8ySEJkQwccpgSwhjhZJRgxV3AwrGLtDaJD\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.8.0 ;\r\n//import \"@openzeppelin/contracts/token/ERC20/ERC20.sol\";\r\ninterface IExchangeGovernance721  {\r\n\r\n     function addNftToken( uint tokenId,address _address) external ;\r\n\r\n}",
+  "sourcePath": "D:/公司项目/rainbow/RainbowDao-protocol/contracts/interface/IExchangeGovernance721.sol",
+  "ast": {
+    "absolutePath": "/D/公司项目/rainbow/RainbowDao-protocol/contracts/interface/IExchangeGovernance721.sol",
+    "exportedSymbols": {
+      "IExchangeGovernance721": [
+        13166
+      ]
+    },
+    "id": 13167,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 13158,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:27"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 13166,
+        "linearizedBaseContracts": [
+          13166
+        ],
+        "name": "IExchangeGovernance721",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "f0f17e87",
+            "id": 13165,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addNftToken",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13163,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13160,
+                  "mutability": "mutable",
+                  "name": "tokenId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13165,
+                  "src": "151:12:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13159,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "151:4:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13162,
+                  "mutability": "mutable",
+                  "name": "_address",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13165,
+                  "src": "164:16:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 13161,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "164:7:27",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "149:32:27"
+            },
+            "returnParameters": {
+              "id": 13164,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "191:0:27"
+            },
+            "scope": 13166,
+            "src": "129:63:27",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 13167,
+        "src": "85:112:27"
+      }
+    ],
+    "src": "0:197:27"
+  },
+  "legacyAST": {
+    "absolutePath": "/D/公司项目/rainbow/RainbowDao-protocol/contracts/interface/IExchangeGovernance721.sol",
+    "exportedSymbols": {
+      "IExchangeGovernance721": [
+        13166
+      ]
+    },
+    "id": 13167,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 13158,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:27"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 13166,
+        "linearizedBaseContracts": [
+          13166
+        ],
+        "name": "IExchangeGovernance721",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "f0f17e87",
+            "id": 13165,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addNftToken",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13163,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13160,
+                  "mutability": "mutable",
+                  "name": "tokenId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13165,
+                  "src": "151:12:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13159,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "151:4:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13162,
+                  "mutability": "mutable",
+                  "name": "_address",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13165,
+                  "src": "164:16:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 13161,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "164:7:27",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "149:32:27"
+            },
+            "returnParameters": {
+              "id": 13164,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "191:0:27"
+            },
+            "scope": 13166,
+            "src": "129:63:27",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 13167,
+        "src": "85:112:27"
+      }
+    ],
+    "src": "0:197:27"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.0+commit.c7dfd78e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-10-08T01:43:00.933Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

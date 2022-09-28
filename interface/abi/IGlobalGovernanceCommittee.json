@@ -1,0 +1,173 @@
+{
+  "contractName": "IGlobalGovernanceCommittee",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "activeGov",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"activeGov\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/D/\\u516c\\u53f8\\u9879\\u76ee/rainbow/RainbowDao-protocol/contracts/interface/gov/IGlobalGovernanceCommittee.sol\":\"IGlobalGovernanceCommittee\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/\\u516c\\u53f8\\u9879\\u76ee/rainbow/RainbowDao-protocol/contracts/interface/gov/IGlobalGovernanceCommittee.sol\":{\"keccak256\":\"0x64ece5802b5c551421fa5c19ce095ac28540a8e3b790bf8f69644bdb22591d53\",\"urls\":[\"bzz-raw://0aee16fb0e59744301d7007e02d52f13e17f7f6a3858bfcaff315d4d5cd83e26\",\"dweb:/ipfs/QmSYWLLfJaQpxjcphFTxifbwVEURXFCg5C55bDTRS82Pxr\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.8.0;\r\n\r\ninterface IGlobalGovernanceCommittee {\r\n   function activeGov() external;\r\n}\r\n",
+  "sourcePath": "D:/公司项目/rainbow/RainbowDao-protocol/contracts/interface/gov/IGlobalGovernanceCommittee.sol",
+  "ast": {
+    "absolutePath": "/D/公司项目/rainbow/RainbowDao-protocol/contracts/interface/gov/IGlobalGovernanceCommittee.sol",
+    "exportedSymbols": {
+      "IGlobalGovernanceCommittee": [
+        11090
+      ]
+    },
+    "id": 11091,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 11086,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:32"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 11090,
+        "linearizedBaseContracts": [
+          11090
+        ],
+        "name": "IGlobalGovernanceCommittee",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "0ab3218b",
+            "id": 11089,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "activeGov",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11087,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "88:2:32"
+            },
+            "returnParameters": {
+              "id": 11088,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "99:0:32"
+            },
+            "scope": 11090,
+            "src": "70:30:32",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 11091,
+        "src": "27:76:32"
+      }
+    ],
+    "src": "0:105:32"
+  },
+  "legacyAST": {
+    "absolutePath": "/D/公司项目/rainbow/RainbowDao-protocol/contracts/interface/gov/IGlobalGovernanceCommittee.sol",
+    "exportedSymbols": {
+      "IGlobalGovernanceCommittee": [
+        11090
+      ]
+    },
+    "id": 11091,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 11086,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:32"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 11090,
+        "linearizedBaseContracts": [
+          11090
+        ],
+        "name": "IGlobalGovernanceCommittee",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "0ab3218b",
+            "id": 11089,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "activeGov",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11087,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "88:2:32"
+            },
+            "returnParameters": {
+              "id": 11088,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "99:0:32"
+            },
+            "scope": 11090,
+            "src": "70:30:32",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 11091,
+        "src": "27:76:32"
+      }
+    ],
+    "src": "0:105:32"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.0+commit.c7dfd78e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-10-08T01:43:37.456Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
